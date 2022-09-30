@@ -396,6 +396,7 @@ func (c *Client) R() *Request {
 		multipartFields: []*MultipartField{},
 		PathParams:      map[string]string{},
 		jsonEscapeHTML:  true,
+		log:             c.log,
 	}
 	return r
 }
